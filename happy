@@ -1,0 +1,41 @@
+CreateSreekara
+ 
+CodeAnimation
+Reset
+Show grid
+ 
+ToolboxShow BlocksVersion HistoryWorkspace
+
+varballons,ballonsGroup;
+varrand
+varcolor
+functiondraw(){
+background("pink");
+if(World.frameCount%25===0){
+  ballons=createSprite(200,350,10,10)
+  ballons.x=Math.round(random(50,350))
+  ballons.velocityY=-2
+    rand=Math.round(random(1,6))
+  switch(rand){
+    case1:ballons.setAnimation("1")
+    break
+    case2:ballons.setAnimation("2")
+    break
+    case3:ballons.setAnimation("3")
+    break
+    case4:ballons.setAnimation("4")
+    break
+    case5:ballons.setAnimation("5")
+    break
+    case6:ballons.setAnimation("6")
+    break
+    default:break
+  }
+}
+color=Math.round(random(1,4))
+switch(color){
+  case1:textSize(30)
+  stroke("red")
+  text("HAPPY GRANDPARENTS'",25,200)
+ClearDebug Sprites: Off
+©
